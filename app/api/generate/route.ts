@@ -5,6 +5,7 @@ import { Ratelimit } from "@upstash/ratelimit";
 
 const config = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
+  basePath: `https://api.groq.com`,
 });
 const openai = new OpenAIApi(config);
 
