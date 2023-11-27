@@ -5,7 +5,7 @@ import { Ratelimit } from "@upstash/ratelimit";
 
 const config = new Configuration({
   apiKey: process.env.OPENAI_API_KEY,
-  basePath: `https://api.groq.com`,
+  basePath: `https://api.groq.com/openai/v1`,
 });
 const openai = new OpenAIApi(config);
 
@@ -42,7 +42,7 @@ export async function POST(req: Request): Promise<Response> {
   let { prompt } = await req.json();
 
   const response = await openai.createChatCompletion({
-    model: "gpt-3.5-turbo",
+    model: "llama2-70b-4096",
     messages: [
       {
         role: "system",
