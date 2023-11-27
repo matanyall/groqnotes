@@ -3,6 +3,7 @@
   <h1 align="center">Novel</h1>
 </a>
 
+
 <p align="center">
   An open-source Notion-style WYSIWYG editor with AI-powered autocompletions. 
 </p>
