@@ -42,7 +42,7 @@ export async function POST(req: Request): Promise<Response> {
   let { prompt } = await req.json();
 
   const response = await openai.createChatCompletion({
-    model: "llama2-70b-4096",
+    model: "mixtral-8x7b-32768",
     messages: [
       {
         role: "system",
