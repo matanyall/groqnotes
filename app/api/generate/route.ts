@@ -50,7 +50,7 @@ export async function POST(req: Request): Promise<Response> {
           "You are an AI writing assistant that continues existing text based on context from prior text. " +
           "Give more weight/priority to the later characters than the beginning ones. " +
           "Limit your response to no more than 200 characters, but make sure to construct complete sentences. " +
-          "You only respond with text that completes teh prompt, nothing else.",
+          "You only respond with text that completes the prompt. Do NOT respond with any commentary, just finish the prompt.",
         // we're disabling markdown for now until we can figure out a way to stream markdown text with proper formatting: https://github.com/steven-tey/novel/discussions/7
         // "Use Markdown formatting when appropriate.",
       },
